@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <title>pratapvarma2006</title>
+    <link rel="stylesheet" href="Try.css">
+</head>
+<body>
+
+    <h1 center> Welcome to Best Friend.Com</h1>
+<div>
+    <h3>Are you free on 14th February?</h3>
+
+    <button> <a href="game.html">Yes</a>  </button>
+    <button><a href="game.html">No</a>  </button>
+    
+   
+
+</div>
+    
+</body>
+</html>
+
+const YELLOW = "#EBCB8B";
+const BLUE = "#5E81AC";
+const GREEN = "#A3BE8C";
+const colors = [YELLOW, BLUE , GREEN];
+const noCatch = document.querySelector("#no-catch");
+const scoreBtn = document.querySelector("#score-button");
+const speedBtn = document.querySelector("#speed-button");
+const clickScoreSpan = document.querySelector("#score");
+const speedSpan = document.querySelector("#speed");
+const startBtn = document.querySelector("#start");
+const start = document.querySelector(".start");
+const game = document.querySelector(".spd-scr-btn");
+const gameStart = document.querySelector(".game");
+
+
+
+
+//launch animation Game start 
+startGame()
+//Animation Game start 
+function startGame(){
+  setTimeout(() => {
+      gameStart.style.opacity = 1;
+      gameStart.style.transition = "2s";
+    }, 500)
+}
